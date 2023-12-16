@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+::selection {
+  color: #ef7829;
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h2 {
+  font-family: Merriweather, serif;
+}
+
+.btn {
+  background-color: #ef7829;
+  padding: 18px 58px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #ef7829;
+  transition: 0.3s;
+}
+
+.btn:active {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  padding: 18px 58px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  background-color: #ef7829;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-secondary:active {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+
+.btn-terciary {
+  background-color: #93bc38;
+  padding: 18px 58px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-noborder {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 5em;
+}
+
+.navbar ul li a {
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+  color: #ef7829;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 42px;
+  margin-bottom: 5em;
+}
+
+.logo {
+  width: 20em;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(images/hero_home.jpg);
+  background-position: 40%;
+  background-size: cover;
+  height: 950px;
+}
+
+.hero-content {
+  margin-top: 15em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 5em;
+  color: #fff;
+  margin-bottom: 0.2em;
+}
+
+.hero-content p {
+  color: #fff;
+  width: 45%;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content-buttons {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.hero-content-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 32px;
+}
+
+.text-content {
+  background-color: #ef7829;
+  padding: 116px 0;
+  margin-bottom: 6em;
+}
+
+.text-content h2 {
+  font-weight: 400;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+}
+
+.card-collection-text {
+  text-align: center;
+  margin-bottom: 6em;
+}
+
+.card-collection-text h2 {
+  font-size: 4em;
+  font-weight: 500;
+  margin-bottom: 0.1em;
+}
+
+.card-collection-text p {
+  font-size: 2em;
+}
+
+.card-collection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.product-card {
+  overflow: hidden;
+  width: 350px;
+  padding: 2em;
+  border-radius: 35px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translate(0, -10px);
+}
+
+.strain-type {
+  text-align: left;
+  font-weight: 700;
+}
+
+.strain-type-text {
+  background-color: #edf0f7;
+  padding: 6px 24px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.text-half {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.text-half h3 {
+  font-size: 2em;
+}
+
+.text-half a {
+  margin-top: 1.5em;
+}
+
+.dealer-newsletter {
+  height: 500px;
+  background: linear-gradient(to right, rgb(147, 188, 56) 40%, rgba(0, 0, 0, 0) 100%), url(images/dealer.jpg);
+  background-size: cover;
+  margin-bottom: 5em;
+  padding: 5em;
+}
+
+.dealer-newsletter h2 {
+  font-size: 3em;
+  font-weight: 400;
+  width: 45%;
+  margin-bottom: 0.8em;
+}
+
+.dealer-newsletter a {
+  text-decoration: underline;
+  line-height: 1.7em;
+}
+
+.dealer-newsletter h2 span {
+  font-weight: 800;
+}
+
+.dealer-form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 1.2em;
+}
+
+.dealer-form input[type='email'],
+.dealer-form input[type='submit'] {
+  border: 0;
+  width: 100%;
+  padding: 18px 58px;
+  border-radius: 30px;
+}
+
+.dealer-form input:focus {
+  outline: none;
+}
