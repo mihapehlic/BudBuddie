@@ -231,7 +231,7 @@ h2 {
 
 .product-card {
   overflow: hidden;
-  width: 350px;
+  width: 400px;
   padding: 2em;
   border-radius: 35px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
@@ -313,6 +313,11 @@ h2 {
   outline: none;
 }
 
+.learn-section {
+  height: 100%;
+  margin-bottom: 5em;
+}
+
 .learn-section-text {
   display: flex;
   flex-direction: column;
@@ -334,6 +339,17 @@ h2 {
   overflow: hidden;
 }
 
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  margin-bottom: 2em;
+}
+
+.article-container {
+  grid-column: span 2;
+}
+
 .article-img-container {
   width: 100%;
   height: 100%;
@@ -346,7 +362,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
 }
 
 .article-image {
@@ -362,7 +378,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 42px 64px;
+  padding: 42px 42px;
 }
 
 .article-content h3 {
@@ -370,4 +386,72 @@ h2 {
   margin-bottom: 24px;
   font-size: 2em;
   font-weight: 600;
+}
+
+.article-container-alt {
+  position: relative;
+  width: 100%;
+  height: 79%;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+}
+
+.article-img-container-alt {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-image-alt {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: middle;
+  border-radius: 35px 35px 0 0;
+}
+
+.article-content-alt {
+  position: absolute;
+  background: white;
+  color: black;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.article-content-alt h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.btn-article {
+  align-self: flex-start;
+  background-color: #ef7829;
+  padding: 18px 58px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+  .article-grid {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  .article-container {
+    grid-column: span 1;
+  }
+
+  .article-container,
+  .article-container-alt,
+  .article-content-alt {
+    height: auto;
+  }
 }
