@@ -569,6 +569,10 @@ footer a {
     color: #000;
   }
 
+  .hero-content {
+    margin-top: 12em;
+  }
+
   .hero-content h1 {
     font-size: 3.5em;
   }
@@ -588,7 +592,7 @@ footer a {
   .text-content {
     background-color: #ef7829;
     padding: 64px 12px;
-    margin-bottom: 6em;
+    margin-bottom: 2em;
   }
 
   .text-content h2 {
@@ -599,6 +603,21 @@ footer a {
 
   .header2 {
     font-size: 2em;
+    font-weight: 500;
+  }
+
+  .card-collection-text {
+    margin-bottom: 2em;
+  }
+
+  .card-collection-text p {
+    font-size: 1.3em;
+  }
+
+  .card-collection {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
   }
 }
 
