@@ -105,6 +105,7 @@ h2 {
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+  margin-bottom: 3em;
 }
 
 @keyframes fadeInUp {
@@ -144,7 +145,6 @@ h2 {
   margin: 0 auto;
   overflow: hidden;
   padding: 0 42px;
-  margin-bottom: 5em;
 }
 
 .logo {
@@ -283,7 +283,8 @@ h2 {
   margin-bottom: 0.8em;
 }
 
-.dealer-newsletter a {
+.dealer-newsletter a,
+.newsletter a {
   text-decoration: underline;
   line-height: 1.7em;
 }
@@ -343,7 +344,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3em;
-  margin-bottom: 2em;
 }
 
 .article-container {
@@ -437,6 +437,27 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #fff;
+}
+
+.newsletter {
+  background-color: #e55933;
+  color: #fff;
+  padding: 72px;
+}
+
+.newsletter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.subheader {
+  font-size: 1.5em;
+  width: 45%;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 @media screen and (max-width: 1440px) {
