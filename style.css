@@ -596,6 +596,10 @@ footer a {
     font-size: 1.5em;
     text-align: center;
   }
+
+  .header2 {
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 1440px) {
