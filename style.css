@@ -101,10 +101,15 @@ h2 {
 .btn-noborder {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #000;
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+}
+
+.btn-noborder:hover {
+  color: #93bc38;
 }
 
 @keyframes fadeInUp {
@@ -324,6 +329,8 @@ h2 {
   border-radius: 30px;
   font-size: 16px;
   font-family: Montserrat, sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .dealer-form input:focus {
@@ -412,6 +419,7 @@ h2 {
   overflow: hidden;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 35px;
+  margin-bottom: 2em;
 }
 
 .article-img-container-alt {
@@ -565,7 +573,8 @@ footer a {
   }
 
   .navbar ul {
-    padding: 16px;
+    font-size: 1.8em;
+    padding: 42px;
     gap: 1em;
   }
 
@@ -573,8 +582,12 @@ footer a {
     color: #000;
   }
 
+  .btn-noborder {
+    font-size: 0.8em;
+  }
+
   .hero-content {
-    margin-top: 12em;
+    margin-top: 7em;
   }
 
   .hero-content h1 {
@@ -595,14 +608,14 @@ footer a {
 
   .text-content {
     background-color: #ef7829;
-    padding: 64px 12px;
+    padding: 42px 12px;
     margin-bottom: 2em;
   }
 
   .text-content h2 {
     font-weight: 300;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.7em;
+    text-align: left;
   }
 
   .header2 {
@@ -627,6 +640,7 @@ footer a {
   .dealer-newsletter {
     padding: 64px 0;
     height: 100%;
+    margin-bottom: 2em;
   }
 
   .dealer-newsletter h2 {
@@ -640,6 +654,11 @@ footer a {
 
   .dealer-form p {
     font-size: 0.8em;
+  }
+
+  .learn-section-text p {
+    width: auto;
+    font-size: 1em;
   }
 }
 
