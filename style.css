@@ -1,3 +1,4 @@
+/* CONFIG */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -33,6 +34,8 @@ a {
 h2 {
   font-family: Merriweather, serif;
 }
+
+/* BUTTONS */
 
 .btn {
   background-color: #ef7829;
@@ -112,16 +115,25 @@ h2 {
   color: #93bc38;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.btn-article {
+  align-self: flex-start;
+  background-color: #ef7829;
+  padding: 18px 58px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #fff;
 }
+
+.btn-article:hover {
+  background-color: #fff;
+  color: #ef7829;
+  border: 0.5px solid #ef7829;
+  transition: 0.3s;
+}
+
+/* NAV & HERO */
 
 .navbar {
   margin-top: 2em;
@@ -138,11 +150,20 @@ h2 {
 
 .navbar ul li a {
   color: #fff;
-  transition: 0.6s ease;
+  display: inline-block;
+  opacity: 0.75;
+  font-size: 1.3em;
 }
 
 .navbar ul li a:hover {
+  opacity: 1;
   color: #ef7829;
+  transition: 0.5s ease;
+}
+
+.active {
+  color: #ef7829;
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -176,6 +197,13 @@ h2 {
   background-position: 40%;
   background-size: cover;
   height: 950px;
+}
+
+.hero-about {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(images/hero_about.jpg);
+  background-position: 50%;
+  background-size: cover;
+  height: 600px;
 }
 
 .hero-content {
@@ -214,6 +242,69 @@ h2 {
   padding: 32px;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ABOUT PAGE */
+
+.hero-content-about {
+  margin-top: 15em;
+  overflow: hidden;
+  text-align: left;
+}
+
+.hero-content-about h1 {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 4em;
+  color: #fff;
+  margin-bottom: 0.2em;
+}
+
+.hero-content-about p {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.about-content {
+  padding: 4em;
+}
+
+.about-content h2 {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 1.5em;
+  font-weight: 600;
+  font-size: 1.7em;
+}
+
+.about-content h3 {
+  font-weight: 500;
+  margin-bottom: 0.6em;
+  font-size: 1.3em;
+}
+
+.about-content p {
+  margin-bottom: 2em;
+}
+
+.about-content h4 {
+  margin-top: 3em;
+  font-family: Merriweather, serif;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+/* UNDER HERO TEXT */
+
 .text-content {
   background-color: #ef7829;
   padding: 116px 0;
@@ -226,6 +317,8 @@ h2 {
   color: #fff;
   text-align: center;
 }
+
+/* FAV STRAINS */
 
 .card-collection-text {
   text-align: center;
@@ -288,6 +381,16 @@ h2 {
   margin-top: 1.5em;
 }
 
+/* STRAINS PAGE */
+
+.card-collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5em;
+}
+
+/* DEALER NEWSLETTER */
+
 .dealer-newsletter {
   height: 500px;
   background: linear-gradient(to right, rgb(147, 188, 56) 40%, rgba(0, 0, 0, 0) 100%), url(images/dealer.jpg);
@@ -336,6 +439,8 @@ h2 {
 .dealer-form input:focus {
   outline: none;
 }
+
+/* LEARN SECTION */
 
 .learn-section {
   height: 100%;
@@ -450,17 +555,6 @@ h2 {
   font-weight: 600;
 }
 
-.btn-article {
-  align-self: flex-start;
-  background-color: #ef7829;
-  padding: 18px 58px;
-  border-radius: 30px;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #fff;
-}
-
 .newsletter {
   background-color: #e55933;
   color: #fff;
@@ -521,10 +615,14 @@ footer a {
   padding: 42px;
 }
 
+#contact {
+  margin-bottom: 2.5em;
+}
+
 #socials {
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  gap: 2em;
 }
 
 @media screen and (max-width: 744px) {
@@ -605,6 +703,16 @@ footer a {
   .hero-content-buttons {
     flex-direction: column;
     gap: 16px;
+  }
+
+  /* ABOUT PAGE */
+
+  .about-content {
+    padding: 55px 12px;
+  }
+
+  .about-content h4 {
+    font-size: 2em;
   }
 
   .text-content {
