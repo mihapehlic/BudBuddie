@@ -27,7 +27,7 @@ body {
 }
 
 .change-color {
-  animation: colorChange 13s infinite;
+  animation: colorChange 4s infinite;
 }
 
 img {
