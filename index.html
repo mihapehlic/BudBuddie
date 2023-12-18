@@ -16,7 +16,7 @@
     />
     <title>BudBuddie | Elevate Your Cannabis Experience</title>
   </head>
-  <body>
+  <body class="change-color">
     <!-- Navbar-->
     <header class="hero">
       <div class="container">
@@ -48,6 +48,7 @@
           <a class="btn" href="strains.html">Explore Strains</a>
           <a class="btn-secondary" href="404.html">Become a Dealer</a>
         </div>
+        <a class="btn-secondary get-high" href="#" onclick="addGetHighClass()">I JUST WANT TO GET HIGH!</a>
       </div>
     </header>
     <!-- SubHero Text-->
@@ -270,6 +271,10 @@
           navMenu.classList.remove('active');
         })
       );
+
+      function addGetHighClass() {
+        document.body.classList.toggle('get-high');
+      }
     </script>
   </body>
 </html>

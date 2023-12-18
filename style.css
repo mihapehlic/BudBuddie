@@ -17,6 +17,19 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.change-color {
+  animation: colorChange 13s infinite;
+}
+
 img {
   width: 100%;
 }
@@ -213,10 +226,18 @@ h2 {
   height: 600px;
 }
 
+.hero-learn {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(images/hero_learn.jpg);
+  background-position: 50%;
+  background-size: cover;
+  height: 600px;
+}
+
 .hero-content {
   margin-top: 15em;
   overflow: hidden;
   text-align: center;
+  padding-bottom: 55px;
 }
 
 .hero-content h1 {
@@ -237,7 +258,8 @@ h2 {
 
 .hero-content h1,
 .hero-content p,
-.hero-content-buttons {
+.hero-content-buttons,
+.get-high {
   opacity: 0;
   animation: fadeInUp 1s ease-out forwards;
 }
