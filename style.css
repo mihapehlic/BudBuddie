@@ -413,7 +413,6 @@ h2 {
 }
 
 .article-container-alt {
-  position: relative;
   width: 100%;
   max-height: 510px;
   overflow: hidden;
@@ -426,7 +425,6 @@ h2 {
   width: 100%;
   height: 50%;
   overflow: hidden;
-  position: relative;
 }
 
 .article-image-alt {
@@ -439,7 +437,6 @@ h2 {
 }
 
 .article-content-alt {
-  position: absolute;
   background: white;
   color: black;
   padding: 24px;
@@ -488,6 +485,10 @@ h2 {
 footer {
   background-color: #2d3648;
   padding: 64px;
+}
+
+.footer-upper .logo {
+  display: inline-block;
 }
 
 footer h4 {
@@ -659,6 +660,53 @@ footer a {
   .learn-section-text p {
     width: auto;
     font-size: 1em;
+  }
+
+  .article-container-alt {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .article-content-alt {
+    border-radius: 35px;
+  }
+
+  .newsletter {
+    padding: 12px;
+  }
+
+  .newsletter .header2 {
+    font-size: 4em;
+    padding-top: 24px;
+  }
+
+  .newsletter .subheader {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .newsletter p {
+    padding-bottom: 24px;
+  }
+
+  footer {
+    padding: 32px 12px 64px 12px;
+    text-align: center;
+  }
+
+  .footer-upper {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .footer-upper .logo {
+    margin: auto;
+    width: 90%;
+  }
+
+  #socials {
+    justify-content: center;
+    align-items: center;
   }
 }
 
