@@ -17,19 +17,6 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-@keyframes colorChange {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
-.change-color {
-  animation: colorChange 4s infinite;
-}
-
 img {
   width: 100%;
 }
@@ -175,8 +162,8 @@ h2 {
 }
 
 .active {
-  color: #ef7829;
-  text-decoration: underline;
+  color: #ef7829 !important;
+  font-weight: 700;
 }
 
 .hamburger {
@@ -227,7 +214,7 @@ h2 {
 }
 
 .hero-learn {
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(images/hero_learn.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url(images/hero_learn.jpg);
   background-position: 50%;
   background-size: cover;
   height: 600px;
@@ -273,17 +260,6 @@ h2 {
 
 .get-high {
   padding: 18px 33px;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ABOUT PAGE */
@@ -520,7 +496,14 @@ h2 {
   text-align: center;
   font-size: 1.3em;
   width: 40em;
-  margin-bottom: 3em;
+}
+
+.learn-header {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1.7em;
+  padding-top: 2.3em;
+  text-align: left;
 }
 
 .article-container {
@@ -536,6 +519,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 3em;
   margin-bottom: 3em;
+  margin-top: 4em;
 }
 
 .article-container {
@@ -619,7 +603,8 @@ h2 {
 }
 
 .newsletter {
-  background-color: #e55933;
+  background: rgb(229, 89, 51);
+  background: radial-gradient(circle, rgba(229, 89, 51, 1) 44%, rgba(239, 120, 41, 1) 74%, rgba(254, 232, 76, 1) 96%);
   color: #fff;
   padding: 72px;
 }
@@ -688,6 +673,32 @@ footer a {
   gap: 2em;
 }
 
+/* UTILITIES */
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.change-color {
+  animation: colorChange 4s infinite;
+}
+
 @media screen and (max-width: 744px) {
   .container {
     padding: 0 12px;
@@ -742,6 +753,11 @@ footer a {
 
   .navbar ul li a:hover {
     color: #000;
+  }
+
+  .active {
+    color: #000 !important;
+    font-weight: 700;
   }
 
   .btn-noborder {
