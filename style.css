@@ -796,7 +796,7 @@ footer a {
 
   .nav-menu {
     z-index: 10;
-    position: absolute;
+    position: fixed;
     right: -100%;
     top: 110px;
     gap: 0;
