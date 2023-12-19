@@ -647,7 +647,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  align-items: center;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
 }
 
 .fof {
@@ -668,10 +670,8 @@ p {
 
 .fof-header {
   color: #fff;
-  text-align: center;
   font-family: Merriweather, serif;
-  font-size: 16em;
-  text-shadow: rgba(239, 120, 41, 1) 0px 19px 90px, rgba(239, 120, 41, 1) 0px 15px 20px;
+  font-size: 10em;
 }
 
 .fof-header h1 {
@@ -680,13 +680,13 @@ p {
 
 .fof-text {
   color: #fff;
-  font-size: 1.6em;
-  text-align: center;
+  font-size: 1.4em;
+  text-align: left;
 }
 
 .bold-text {
   font-weight: 500;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .newsletter {
@@ -938,8 +938,14 @@ footer a {
     border-radius: 35px;
   }
 
+  .fof-container {
+    justify-content: center;
+    align-items: center;
+  }
+
   .fof-header {
-    font-size: 8em;
+    font-size: 4em;
+    text-align: center;
   }
 
   .fof-text {
@@ -948,7 +954,7 @@ footer a {
   }
 
   .bold-text {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   .newsletter {
