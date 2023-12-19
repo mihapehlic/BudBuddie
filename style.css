@@ -811,12 +811,6 @@ footer a {
     right: 0;
   }
 
-  .nav-menu-socials {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-  }
-
   .navbar ul {
     font-size: 1.8em;
     padding: 42px;
