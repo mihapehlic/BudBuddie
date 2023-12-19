@@ -22,7 +22,9 @@
     <header class="hero">
       <div class="container">
         <div class="navbar">
-          <a href="index.html"><img src="images/logo.svg" alt="BudBuddie Logo" class="logo" /></a>
+          <div class="hero-logo-container">
+            <a href="index.html"><img src="images/logo.svg" alt="BudBuddie Logo" class="logo" /></a>
+          </div>
           <nav>
             <ul class="nav-menu">
               <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -46,10 +48,12 @@
           companion on the journey of discovering.
         </p>
         <div class="hero-content-buttons">
-          <a class="btn" href="strains.html">Explore Strains</a>
-          <a class="btn-secondary" href="404.html">Become a Dealer</a>
+          <div class="hero-content-buttons-sub">
+            <a class="btn" href="strains.html">Explore Strains</a>
+            <a class="btn-secondary" href="404.html">Become a Dealer</a>
+          </div>
+          <a class="btn-terciary get-high" href="#" onclick="toggleGetHighClass()">I JUST WANT TO GET HIGH!</a>
         </div>
-        <a class="btn-terciary get-high" href="#" onclick="toggleGetHighClass()">I JUST WANT TO GET HIGH!</a>
       </div>
     </header>
     <!-- SubHero Text-->
@@ -190,7 +194,7 @@
         <p class="subheader">Get the latest news on strains and exclusive offers. Your cannabis journey is about to get exciting</p>
         <form class="dealer-form">
           <input type="email" name="email" placeholder="email@adress.com" required autocomplete="off" />
-          <input type="submit" value="register" class="btn-secondary" />
+          <input type="submit" value="register" class="btn-secondary btn-submit" />
           <p>
             By providing us with your email adress, you agree to BudBuddie’s <a href="404.html">Terms of Service</a> and
             <a href="404.html">Privacy Policy.</a>
