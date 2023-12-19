@@ -151,12 +151,13 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #fff;
+  border: 1px solid #fff;
 }
 
 .btn-article:hover {
   background-color: #fff;
   color: #ef7829;
-  border: 0.5px solid #ef7829;
+  border: 1px solid #ef7829;
   transition: 0.3s;
 }
 
@@ -219,15 +220,14 @@ h2 {
 }
 
 .hero-logo-container a img {
-  width: 100% !important;
-  height: 100%;
+  width: 300px;
 }
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(images/hero_home1.jpg);
   background-position: 40%;
   background-size: cover;
-  height: 950px;
+  height: 1000px;
 }
 
 .hero-about {
@@ -602,27 +602,23 @@ h2 {
 }
 
 .article-container-alt {
+  display: block;
+  overflow: auto;
   width: 100%;
-  max-height: 510px;
-  overflow: hidden;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 35px;
-  margin-bottom: 2em;
 }
 
 .article-img-container-alt {
-  width: 100%;
-  height: 50%;
+  display: block;
   overflow: hidden;
+  border-radius: 35px 35px 0 0;
 }
 
 .article-image-alt {
-  display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  object-position: middle;
-  border-radius: 35px 35px 0 0;
+  object-position: right;
+  height: 350px;
 }
 
 .article-content-alt {
@@ -637,6 +633,14 @@ h2 {
 .article-content-alt h3 {
   font-size: 1.8em;
   font-weight: 600;
+}
+
+/* 404 PAGE */
+
+.fof {
+  height: 100vh;
+  background: url(images/404.jpg);
+  background-size: cover;
 }
 
 .newsletter {
@@ -666,8 +670,8 @@ footer {
   padding: 64px;
 }
 
-.footer-upper .logo {
-  display: inline-block;
+.logo-footer img {
+  width: 250px;
 }
 
 footer h4 {
@@ -710,18 +714,17 @@ footer a {
   gap: 2em;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
   .container {
     padding: 0 12px;
   }
 
   .hero {
-    height: 100vh;
+    height: 100%;
   }
 
   .hero-logo-container a img {
-    width: 75% !important;
-    height: 75%;
+    width: 250px;
   }
 
   .hamburger {
@@ -915,11 +918,6 @@ footer a {
   .footer-upper {
     flex-direction: column;
     gap: 1.5em;
-  }
-
-  .footer-upper .logo {
-    margin: auto;
-    width: 90%;
   }
 
   #socials {
